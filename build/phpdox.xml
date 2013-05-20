@@ -1,0 +1,12 @@
+<phpdox xmlns="http://phpdox.de/config">
+ <project name="Project" source="workspace/app" workdir="build/phpdox">
+  <collector publiconly="false">
+   <include mask="*.php" />
+   <exclude mask="*Autoload.php" />
+  </collector>
+
+  <generator output="workspace">
+   <build engine="html" enabled="true" output="build/api"/>
+  </generator>
+ </project>
+</phpdox>
