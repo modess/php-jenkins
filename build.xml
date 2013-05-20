@@ -25,7 +25,7 @@
             </sequential>
             <antcall target="phpcb" />
             <antcall target="phpcpd" />
-            <!--//<antcall target="phpdox" />//-->
+            <antcall target="phpdox" />
             <antcall target="phploc" />
         </parallel>
     </target>
