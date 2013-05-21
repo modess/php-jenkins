@@ -159,8 +159,6 @@
         <exec executable="phpunit" failonerror="true">
             <arg value="-c" />
             <arg value="${basedir}/phpunit.xml.dist" />
-            <!--//Swap the line below for the one above to only unit test application//-->
-            <!--//<arg value="${basedir}/phpunit.dist.xml" />//-->
             <arg value="--coverage-html" />
             <arg value="${basedir}/build/coverage" />
         </exec>
