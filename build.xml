@@ -126,7 +126,10 @@
     </target>
 
     <target name="phpdox" description="Generate API documentation using phpDox">
-        <exec executable="phpdox" />
+        <exec executable="phpdox">
+            <arg value="-f" />
+            <arg value="${basedir}/build/phpdox.xml" />
+        </exec>
     </target>
 
     <target name="phploc" description="Measure project size using PHPLOC">

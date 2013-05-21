@@ -1,12 +1,27 @@
-<phpdox xmlns="http://phpdox.de/config">
- <project name="Project" source="workspace/app" workdir="build/phpdox">
-  <collector publiconly="false">
-   <include mask="*.php" />
-   <exclude mask="*Autoload.php" />
-  </collector>
+<?xml version="1.0" encoding="utf-8" ?>
+<phpdox xmlns="http://phpdox.de/config" silent="false">
 
-  <generator output="workspace">
-   <build engine="html" enabled="true" output="build/api"/>
-  </generator>
- </project>
+    <project name="YourProject" source="app" workdir="${basedir}/build/api/xml">
+
+        <collector publiconly="false" backend="parser">
+        	<include mask="*.php" />
+   			<exclude mask="*Autoload.php" />
+        </collector>
+
+        <generator output="${basedir}/build/api/docs">
+
+            <build engine="html" enabled="true" output="html">
+                <template dir="${phpDox.home}/templates/html" />
+                <file extension="xhtml" />
+            </build>
+
+            <build engine="todo" enabled="false" output="todo">
+                <file name="todolist.txt" encoding="utf-8" />
+            </build>
+
+            <build engine="graph" enabled="true" output="graph" />
+
+        </generator>
+    </project>
+
 </phpdox>
