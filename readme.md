@@ -37,6 +37,11 @@ Here are the list of build targets that are defined within the build.xml:
 * phpmd-ci - Perform project mess detection using PHPMD creating a log file for the continuous integration server
 * phpunit - Run unit tests with PHPUnit
 * prepare - Prepare for build
+* storage-permissions - Setting storage permissions
+* storage-permissions.unix - Setting storage permissions on unix
+* storage-permissions.windows - Setting storage permissions on windows
+* storage.unix.check - Check for app/storage on unix
+* storage.windows.check - Check for app/storage on windows
 
 ### References
 This boilerplate comes from glueing together a collection of post on the internet
