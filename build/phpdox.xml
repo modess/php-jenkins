@@ -10,10 +10,7 @@
 
         <generator output="${basedir}/build/api/docs">
 
-            <build engine="html" enabled="true" output="html">
-                <template dir="${phpDox.home}/templates/html" />
-                <file extension="xhtml" />
-            </build>
+            <build engine="html" enabled="true" output="html" />
 
             <build engine="todo" enabled="false" output="todo">
                 <file name="todolist.txt" encoding="utf-8" />
