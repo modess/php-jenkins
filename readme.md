@@ -45,5 +45,5 @@ Here are the list of build targets that are defined within the build.xml:
 
 ### References
 This boilerplate comes from glueing together a collection of post on the internet
-* [http://www.codingswag.com/2012/11/continuos-integration-for-laravel-with-jenkins-and-git/](http://www.codingswag.com/2012/11/continuos-integration-for-laravel-with-jenkins-and-git/)
+* [https://modess.io/continuous-integration-for-laravel-with-jenkins-and-git/](https://modess.io/continuous-integration-for-laravel-with-jenkins-and-git/)
 * [http://chris.schalenborgh.be/2013/04/05/deploy-php-projects-jenkins-os/](http://chris.schalenborgh.be/2013/04/05/deploy-php-projects-jenkins-os/)
