@@ -2,7 +2,7 @@
 
 Boilerplate for setting up continuous integration of PHP applications using [Jenkins](http://www.jenkins-ci.org). 
 
-### Installation / setup
+## Installation / setup
 
 Clone or [download](https://github.com/modess/php-jenkins/archive/master.zip) the files and directories, and add them to your repository.
 
@@ -31,7 +31,7 @@ Configure your source and test directories in:
 [...]
 ```
 
-### Build Targets
+## Build Targets
 Here are the list of build targets that are defined within the build.xml:
 
 * **build** *(DEFAULT)*
