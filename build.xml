@@ -33,8 +33,10 @@
             </sequential>
             <antcall target="phpcb" />
             <antcall target="phpcpd" />
-            <antcall target="phpdox" />
-            <antcall target="phploc" />
+            <sequential>
+                <antcall target="phploc" />
+                <antcall target="phpdox" />
+            </sequential>
         </parallel>
     </target>
 
