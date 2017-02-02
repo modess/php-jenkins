@@ -4,6 +4,9 @@
     <collector backend="parser" />
     <generator output="${basedir}/api">
       <build engine="html" output="html"/>
+      <enrich base="${basedir}/logs">
+        <source type="phploc" />
+      </enrich>
     </generator>
   </project>
 </phpdox>

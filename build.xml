@@ -33,8 +33,10 @@
             </sequential>
             <antcall target="phpcb" />
             <antcall target="phpcpd" />
-            <antcall target="phpdox" />
-            <antcall target="phploc" />
+            <sequential>
+                <antcall target="phploc" />
+                <antcall target="phpdox" />
+            </sequential>
         </parallel>
     </target>
 
@@ -142,6 +144,8 @@
         <exec executable="phploc">
            <arg value="--log-csv" />
            <arg value="${build-dir}/logs/phploc.csv" />
+           <arg value="--log-xml" />
+           <arg value="${build-dir}/logs/phploc.xml" />
            <arg path="${src-dir}" />
         </exec>
     </target>
